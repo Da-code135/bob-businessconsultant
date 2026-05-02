@@ -1,4 +1,4 @@
-# GitHub Repository Setup
+## Phase 5 — GitHub Setup
 Run automatically after Phase 4 options are offered.
 
 Using the GitHub MCP server, execute in order:
@@ -14,14 +14,33 @@ Using the GitHub MCP server, execute in order:
 
 3. CREATE MILESTONES
    One milestone per sprint from sprints.md.
-   Use the sprint duration as the due date.
+   Name each milestone "Sprint N — {focus}"
+   Use the sprint end date as the due date.
 
-4. CREATE ISSUES
+4. CREATE GITHUB PROJECT
+   Name: {project-slug} — Development Board
+   Type: Board view (kanban)
+   Link to the repository created in Step 1.
+   Create one column per sprint:
+   - Sprint 1 — Setup
+   - Sprint 2 — Core Build
+   - Sprint 3 — Features
+   - Sprint 4 — Testing and Deployment
+   Add a Done column at the end.
+
+5. CREATE ISSUES
    One issue per user story from backlog.md.
-   Label each with its Epic name.
-   Assign each to the matching sprint milestone.
+   For each issue:
+   - Label with its Epic name
+   - Assign to the matching sprint milestone
+   - Add to the matching sprint column in the Project board
 
-5. CONFIRM TO USER
-   "Your project is live at: github.com/{username}/{project-slug}
-   All documents, issues, and milestones are ready.
-   Your developer can start immediately."
+6. CONFIRM TO USER
+   "Your project is live.
+
+   Repository: github.com/{username}/{project-slug}
+   Project board: github.com/{username}/{project-slug}/projects
+
+   All documents are committed, every user story is a
+   tracked issue, and your sprint board is ready.
+   Your developer can start building immediately."
